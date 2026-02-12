@@ -1,0 +1,50 @@
+export const projects = [
+    {
+        id: "global-tile-portal",
+        title: "Global Tile Distributor Portal",
+        category: "B2B",
+        description: "A centralized B2B platform managing orders for over 500 dealers across 3 continents.",
+        tags: ["B2B Portal", "ERP Integration", "React"],
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+        stats: "300% efficiency gain",
+        client: "Ceramica Global",
+        challenge: "Fragmented ordering systems led to a 15% error rate in international shipments.",
+        solution: "We built a unified dashboard with multi-currency support and real-time inventory hooks.",
+        layout: "case-study",
+        industry: "Retail / Logistics",
+        year: "2024",
+        outcomes: ["Unified Dashboard", "Real-time Inventory", "Multi-currency Support", "Dealer Management"]
+    },
+    {
+        id: "luxury-stone-store",
+        title: "Luxury Stone Ecommerce",
+        category: "Ecommerce",
+        description: "High-performance online store with advanced filtering and 3D product visualization capabilities.",
+        tags: ["Ecommerce", "3D Visualization", "UX Design"],
+        image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80",
+        stats: "2x conversion rate",
+        client: "Elite Stone Co.",
+        challenge: "Customers struggled to visualize natural stone patterns in their homes.",
+        solution: "Integrated a WebGL visualizer that renders stone slabs in realistic room settings.",
+        layout: "case-study",
+        industry: "Ecommerce",
+        year: "2024",
+        outcomes: ["3D Slab Visualizer", "Advanced Filtering", "Next.js Storefront", "Mobile Optimization"]
+    },
+    {
+        id: "warehouse-wms",
+        title: "Warehouse Management System",
+        category: "Internal Tools",
+        description: "Custom internal tool for real-time inventory tracking and automated restocking alerts.",
+        tags: ["Inventory System", "Dashboard", "Real-time Data"],
+        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+        stats: "Zero stockouts",
+        client: "Tiles Logistics Ltd.",
+        challenge: "Manual inventory counting caused significant delays and stock discrepancies.",
+        solution: "Automated tracking via barcode integration and low-stock alert notifications.",
+        layout: "case-study",
+        industry: "Logistics",
+        year: "2023",
+        outcomes: ["Barcode Scanning", "Automated Alerts", "Admin Dashboard", "Inventory Forecasts"]
+    }
+];

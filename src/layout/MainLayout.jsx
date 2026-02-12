@@ -1,5 +1,6 @@
 import Header from './Header';
 import Footer from './Footer';
+import FloatingChat from '../components/FloatingChat';
 
 const MainLayout = ({ children }) => {
     return (
@@ -9,6 +10,7 @@ const MainLayout = ({ children }) => {
                 {children}
             </main>
             <Footer />
+            <FloatingChat />
         </div>
     );
 };

@@ -4,64 +4,8 @@ import { Link } from 'react-router-dom';
 import Hero3D from '../components/Hero3D';
 import AnimatedSection from '../components/AnimatedSection';
 import ImageWithFallback from '../components/ImageWithFallback';
+import { projects } from '../data/projects';
 import './Work.css';
-
-const projects = [
-    {
-        id: 1,
-        title: "Global Tile Distributor Portal",
-        category: "B2B",
-        description: "A centralized B2B platform managing orders for over 500 dealers across 3 continents.",
-        tags: ["B2B Portal", "ERP Integration", "React"],
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-        stats: "300% efficiency gain"
-    },
-    {
-        id: 2,
-        title: "Luxury Stone Ecommerce",
-        category: "Ecommerce",
-        description: "High-performance online store with advanced filtering and 3D product visualization capabilities.",
-        tags: ["Ecommerce", "3D Visualization", "UX Design"],
-        image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80",
-        stats: "2x conversion rate"
-    },
-    {
-        id: 3,
-        title: "Warehouse Management System",
-        category: "Internal Tools",
-        description: "Custom internal tool for real-time inventory tracking and automated restocking alerts.",
-        tags: ["Inventory System", "Dashboard", "Real-time Data"],
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-        stats: "Zero stockouts"
-    },
-    {
-        id: 4,
-        title: "AR Tile Visualizer App",
-        category: "Mobile App",
-        description: "Mobile application allowing customers to preview tile patterns in their actual rooms.",
-        tags: ["Mobile App", "Augmented Reality", "Customer Tool"],
-        image: "https://images.unsplash.com/photo-1516321497487-e288fb1971d2?auto=format&fit=crop&w=800&q=80",
-        stats: "50k+ downloads"
-    },
-    {
-        id: 5,
-        title: "Architectural Catalog Platform",
-        category: "B2B",
-        description: "Digital catalog system for architects to specify and download technical assets.",
-        tags: ["Digital Catalog", "Document Management", "Web App"],
-        image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
-        stats: "10k+ specs generated"
-    },
-    {
-        id: 6,
-        title: "Construction CRM Integration",
-        category: "Internal Tools",
-        description: "Seamless synchronization between field sales tablets and central CRM database.",
-        tags: ["CRM", "System Integration", "Offline Sync"],
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-        stats: "100% data accuracy"
-    }
-];
 
 const Work = () => {
     const [filter, setFilter] = useState('All');
@@ -130,7 +74,7 @@ const Work = () => {
                                 <div className="project-image-wrapper">
                                     <ImageWithFallback src={project.image} alt={project.title} loading="lazy" />
                                     <div className="project-overlay">
-                                        <Link to={`/work/case-study-${project.id}`} className="view-case-btn">
+                                        <Link to={`/work/${project.id}`} className="view-case-btn">
                                             View Case Study <ArrowRight size={16} />
                                         </Link>
                                     </div>

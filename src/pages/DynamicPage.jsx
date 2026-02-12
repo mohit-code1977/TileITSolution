@@ -3,6 +3,7 @@ import { navData } from '../data/navigation';
 import ServiceLayout from './layouts/ServiceLayout';
 import CaseStudyLayout from './layouts/CaseStudyLayout';
 import ProcessLayout from './layouts/ProcessLayout';
+import { projects } from '../data/projects';
 
 // Simple default layout if simple fallback is needed
 import Hero3D from '../components/Hero3D';
@@ -36,6 +37,14 @@ const DynamicPage = () => {
             });
         });
     });
+
+    // Also search in projects if not found in navData
+    if (!pageData) {
+        const project = projects.find(p => p.id === slug);
+        if (project) {
+            pageData = project;
+        }
+    }
 
     if (!pageData) {
         // Fallback for "Core" pages if they match a top-level route handled by simple components
