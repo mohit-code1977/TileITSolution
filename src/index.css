@@ -5,11 +5,11 @@
   /* Warm off-white */
   --color-text-primary: #111111;
   /* Deep charcoal */
-  --color-text-secondary: #555555;
+  --color-text-secondary: #444444;
   --color-accent: #111111;
   /* Black primary buttons */
   --color-accent-hover: #333333;
-  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border: rgba(0, 0, 0, 0.06);
 
   /* Typography */
   --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, sans-serif;
@@ -53,7 +53,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 100%);
   z-index: -1;
   pointer-events: none;
 }

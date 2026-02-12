@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedSection from '../components/AnimatedSection';
 import LogoMarquee from '../components/LogoMarquee';
 import Testimonials from '../components/Testimonials';
+import ImageWithFallback from '../components/ImageWithFallback';
 import './Home.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -58,7 +59,7 @@ const Home = () => {
                 <div
                     className="bg-layer"
                     style={{
-                        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920")',
+                        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920")',
                         opacity: 1 // Hero image starts visible
                     }}
                 />
@@ -193,56 +194,56 @@ const Home = () => {
 
                     <div className="showcase-grid">
                         <AnimatedSection delay={0.1} animationType="fade-up" className="showcase-item large">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200" alt="Modern Interior" />
+                            <ImageWithFallback src="https://images.unsplash.com/photo-1512403735658-221b696c99ec?auto=format&fit=crop&q=80&w=1200" alt="Modern Interior" />
                             <div className="showcase-overlay">
                                 <h3>Smart Showrooms</h3>
                                 <p>Interactive digital catalogs for luxury flagships.</p>
                             </div>
                         </AnimatedSection>
                         <AnimatedSection delay={0.2} animationType="fade-up" className="showcase-item">
-                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=800" alt="Tech Office" />
+                            <ImageWithFallback src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800" alt="Tech Office" />
                             <div className="showcase-overlay">
                                 <h3>Enterprise Portals</h3>
                                 <p>Seamless wholesale management.</p>
                             </div>
                         </AnimatedSection>
                         <AnimatedSection delay={0.3} animationType="fade-up" className="showcase-item">
-                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800" alt="Material Design" />
+                            <ImageWithFallback src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800" alt="Material Design" />
                             <div className="showcase-overlay">
                                 <h3>Custom Calculators</h3>
                                 <p>Precision engineering tools.</p>
                             </div>
                         </AnimatedSection>
                         <AnimatedSection delay={0.4} animationType="fade-up" className="showcase-item">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Skyscraper" />
+                            <ImageWithFallback src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80&w=800" alt="Skyscraper" />
                             <div className="showcase-overlay">
                                 <h3>Global Scalability</h3>
                                 <p>Infrastructure built for the future.</p>
                             </div>
                         </AnimatedSection>
                         <AnimatedSection delay={0.5} animationType="fade-up" className="showcase-item">
-                            <img src="https://images.unsplash.com/photo-1558227691-41ea78a1f631?auto=format&fit=crop&q=80&w=800" alt="Digital Warehouse" />
+                            <ImageWithFallback src="https://images.unsplash.com/photo-1558227691-41ea78a1f631?auto=format&fit=crop&q=80&w=800" alt="Digital Warehouse" />
                             <div className="showcase-overlay">
                                 <h3>Efficient Logistics</h3>
                                 <p>Real-time inventory synchronization.</p>
                             </div>
                         </AnimatedSection>
                         <AnimatedSection delay={0.6} animationType="fade-up" className="showcase-item">
-                            <img src="https://images.unsplash.com/photo-1541888941259-79273f4d6c3c?auto=format&fit=crop&q=80&w=800" alt="Construction detail" />
+                            <ImageWithFallback src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=800" alt="Construction detail" />
                             <div className="showcase-overlay">
                                 <h3>Precision Tiling</h3>
                                 <p>Digital asset management for manufacturers.</p>
                             </div>
                         </AnimatedSection>
                         <AnimatedSection delay={0.7} animationType="fade-up" className="showcase-item large">
-                            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80&w=1200" alt="Modern Hall" />
+                            <ImageWithFallback src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" alt="Modern Hall" />
                             <div className="showcase-overlay">
                                 <h3>Architectural Flow</h3>
                                 <p>Advanced visualization for large-scale interiors.</p>
                             </div>
                         </AnimatedSection>
                         <AnimatedSection delay={0.8} animationType="fade-up" className="showcase-item">
-                            <img src="https://images.unsplash.com/photo-1518005020480-1097cbb4b0a2?auto=format&fit=crop&q=80&w=800" alt="Detail" />
+                            <ImageWithFallback src="https://images.unsplash.com/photo-1518005020480-1097cbb4b0a2?auto=format&fit=crop&q=80&w=800" alt="Detail" />
                             <div className="showcase-overlay">
                                 <h3>Material Science</h3>
                                 <p>Interactive digital twins of physical samples.</p>

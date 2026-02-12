@@ -11,13 +11,13 @@ const LogoMarquee = () => {
             <div className="marquee-content">
                 {logos.map((logo, index) => (
                     <div key={index} className="marquee-item">
-                        {logo}
+                        <span className="logo-text">{logo}</span>
                     </div>
                 ))}
                 {/* Duplicate for seamless loop */}
                 {logos.map((logo, index) => (
                     <div key={`dup-${index}`} className="marquee-item">
-                        {logo}
+                        <span className="logo-text">{logo}</span>
                     </div>
                 ))}
             </div>
